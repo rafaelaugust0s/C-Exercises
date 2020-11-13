@@ -8,6 +8,7 @@
         <State name="__root__">
           <Node name="Exercises" expanded="True">
             <Node name="Exercises" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
