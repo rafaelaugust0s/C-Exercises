@@ -6,20 +6,33 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Enter a number - ");
-            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(test("if else"));
+            Console.WriteLine(test("else"));
+            Console.ReadLine();
+        }
 
-            Console.WriteLine(" Enter a number - ");
-            int b = Convert.ToInt32(Console.ReadLine());
-        
-
-            if (a == 30 || b == 30 || (a + b) == 30)
+          public static string test(string s)
+           {
+            if (s.Length > 2 && s.Substring(0, 2).Equals("if"))
             {
-                Console.WriteLine("true");
-            }else{
-                Console.WriteLine("false");
+                return s;
             }
+            return "if " + s;
 
+
+            //Console.WriteLine(" Enter a number - ");
+            //int a = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine(" Enter a number - ");
+            //int b = Convert.ToInt32(Console.ReadLine());
+
+                //if (a == 30 || b == 30 || (a + b) == 30)
+             //{
+            //    Console.WriteLine("true");
+                    //}else{
+                    //    Console.WriteLine("false");
+                //}
+                    //return;
 
 
             //    Console.WriteLine("Hello World!");
@@ -33,7 +46,7 @@ namespace Exercises
             //        return a == b ? (a + b) * 3 : a + b;
             //    }
 
-            return ;
+
         }
 
     }
