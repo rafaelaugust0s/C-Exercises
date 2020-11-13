@@ -1,0 +1,15 @@
+/Users/rafaelsuarez/Projects/Exercises/Exercises/bin/Debug/net5.0/Exercises.deps.json
+/Users/rafaelsuarez/Projects/Exercises/Exercises/bin/Debug/net5.0/Exercises.runtimeconfig.json
+/Users/rafaelsuarez/Projects/Exercises/Exercises/bin/Debug/net5.0/Exercises.runtimeconfig.dev.json
+/Users/rafaelsuarez/Projects/Exercises/Exercises/bin/Debug/net5.0/Exercises.dll
+/Users/rafaelsuarez/Projects/Exercises/Exercises/bin/Debug/net5.0/ref/Exercises.dll
+/Users/rafaelsuarez/Projects/Exercises/Exercises/bin/Debug/net5.0/Exercises.pdb
+/Users/rafaelsuarez/Projects/Exercises/Exercises/obj/Debug/net5.0/Exercises.csprojAssemblyReference.cache
+/Users/rafaelsuarez/Projects/Exercises/Exercises/obj/Debug/net5.0/Exercises.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rafaelsuarez/Projects/Exercises/Exercises/obj/Debug/net5.0/Exercises.AssemblyInfoInputs.cache
+/Users/rafaelsuarez/Projects/Exercises/Exercises/obj/Debug/net5.0/Exercises.AssemblyInfo.cs
+/Users/rafaelsuarez/Projects/Exercises/Exercises/obj/Debug/net5.0/Exercises.csproj.CoreCompileInputs.cache
+/Users/rafaelsuarez/Projects/Exercises/Exercises/obj/Debug/net5.0/Exercises.dll
+/Users/rafaelsuarez/Projects/Exercises/Exercises/obj/Debug/net5.0/ref/Exercises.dll
+/Users/rafaelsuarez/Projects/Exercises/Exercises/obj/Debug/net5.0/Exercises.pdb
+/Users/rafaelsuarez/Projects/Exercises/Exercises/obj/Debug/net5.0/Exercises.genruntimeconfig.cache
