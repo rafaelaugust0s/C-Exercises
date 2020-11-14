@@ -6,25 +6,34 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(" Enter first number - ");
+            int a = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine(" Enter second number - ");
+            int b = Convert.ToInt32(Console.ReadLine());
 
-
-            Console.WriteLine(test("Python", 1));
-            Console.WriteLine(test("Python", 0));
-            Console.WriteLine(test("Python", 4));
-            Console.ReadLine();
         }
-
-        public static string test(string str, int n)
+        public static int Sum (int a, int b, int nums)
         {
-            return str.Remove(n, 1);
 
+            nums = 0;
+
+            if (nums == a && nums == b)
+            {
+                Console.WriteLine((a + b) * 3);
+            }
+            else
+            {
+                Console.WriteLine(a + b);
+
+            }
+
+            return nums;
 
 
         }
 
     }
-
 }
 
 
@@ -62,16 +71,15 @@ namespace Exercises
 //return;
 
 
-//    Console.WriteLine("Hello World!");
 
-//        Console.WriteLine(SumTriple(2, 2));
-//        Console.WriteLine(SumTriple(12, 20));
-//        Console.WriteLine(SumTriple(-5, 2));
+
+
+//    Console.WriteLine(test("Python", 1));
+//    Console.WriteLine(test("Python", 0));
+//    Console.WriteLine(test("Python", 4));
+//    Console.ReadLine();
 //}
-//    public static int SumTriple(int a, int b)
-//    {
-//        return a == b ? (a + b) * 3 : a + b;
-//    }
 
-
-
+//public static string test(string str, int n)
+//{
+//    return str.Remove(n, 1);
