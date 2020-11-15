@@ -6,35 +6,98 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Enter first number - ");
-            int a = Convert.ToInt32(Console.ReadLine());
+            Sum1(10, 10);
+            Sum2(15, 15);
+            AddIf("if else");
+            AddIf("else");
+            Remove("Python", 1);
+            Remove("Python", 0);
+            Remove("Python", 4);
+            Reverse("abcd");
+            Reverse("a");
+            Reverse("xy");
 
-            Console.WriteLine(" Enter second number - ");
-            int b = Convert.ToInt32(Console.ReadLine());
+
 
         }
-        public static int Sum (int a, int b, int nums)
+        //QUESTION # 1
+        public static int Sum1(int a, int b)
         {
-
-            nums = 0;
-
-            if (nums == a && nums == b)
+            if (a == b)
             {
                 Console.WriteLine((a + b) * 3);
             }
             else
             {
-                Console.WriteLine(a + b);
+                Console.WriteLine((a + b));
+            }
+            return 0;
+        }
+        //QUESTION # 2
+        public static int Sum2(int a, int b)
+        {
 
+            if (a == 30 || b == 30 || (a + b) == 30)
+            {
+                Console.WriteLine("true");
+                }
+                else
+                {
+                Console.WriteLine("false");
             }
 
-            return nums;
+            return 0;
+        }
+        //QUESTION # 3
+        public static string AddIf(string str)
+        {
 
+            if (str.Length > 2 && str.Substring(0, 2).Equals("if"))
+            {
+                Console.WriteLine(str);
+                }
+                else
+                {
+                Console.WriteLine("if " + str);
+            }
+            return " ";
+        }
+
+        //QUESTION # 4
+        public static string Remove(string str, int a)
+        {
+
+            Console.WriteLine(str.Remove(a, 1));
+
+                return " ";
 
         }
 
+        //QUESTION # 5
+        public static string Reverse(string str)
+        {
+
+            Console.WriteLine(str.Length > 1 ? str.Substring(str.Length - 1) + str.Substring(1, str.Length - 2) + str.Substring(0, 1) : str);
+
+            return " ";
+        }
+
+
+        //QUESTION # 6
+
+        public static string 
     }
 }
+           
+
+
+
+
+
+
+            
+
+    
 
 
 
@@ -42,33 +105,10 @@ namespace Exercises
 
 
 
-//    Console.WriteLine(test("if else"));
-//    Console.WriteLine(test("else"));
-//    Console.ReadLine();
-//}
-
-//  public static string test(string s)
-//   {
-//    if (s.Length > 2 && s.Substring(0, 2).Equals("if"))
-//    {
-//        return s;
-//    }
-//    return "if " + s;
 
 
-//Console.WriteLine(" Enter a number - ");
-//int a = Convert.ToInt32(Console.ReadLine());
 
-//Console.WriteLine(" Enter a number - ");
-//int b = Convert.ToInt32(Console.ReadLine());
 
-//if (a == 30 || b == 30 || (a + b) == 30)
-//{
-//    Console.WriteLine("true");
-//}else{
-//    Console.WriteLine("false");
-//}
-//return;
 
 
 
