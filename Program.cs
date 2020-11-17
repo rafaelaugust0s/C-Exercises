@@ -36,7 +36,7 @@ namespace Exercises
         }
         //QUESTION # 1
         public static int Sum1(int a, int b)
-
+        //remove the blank line
         {
             return a == b ? (a + b) * 3 : (a + b);
         }
@@ -45,7 +45,14 @@ namespace Exercises
         {
             return a == 30 || b == 30 || (a + b) == 30 ? true : false;   
         }
+        
+        //Add spaces between methods and ALWAYS ADD Comments like 
         //QUESTION # 3
+        
+        /**
+        * @param string str
+        * @return string
+        */
         public static string AddIf(string str)
         {
 
