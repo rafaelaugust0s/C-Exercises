@@ -34,7 +34,7 @@ namespace Exercises
             Console.WriteLine(Range(1, 4, 8));
             int[] a = { 1, 2, 3, 4, 5 };
             LeftRotation(a, 2);
-            Console.WriteLine(Sub("HelloWorld",3,6));
+            Console.WriteLine(Sub("HelloWorld", 3, 6));
 
 
 
@@ -46,8 +46,8 @@ namespace Exercises
          * @param int b   
          * @return int 
          */
-         public static int Sum1(int a, int b){
-                return a == b ? (a + b) * 3 : (a + b);
+        public static int Sum1(int a, int b) {
+            return a == b ? (a + b) * 3 : (a + b);
         }
 
         /**
@@ -56,8 +56,8 @@ namespace Exercises
          * @param int b   
          * @return boolean 
          */
-         public static Boolean Sum2(int a, int b){
-                return a == 30 || b == 30 || (a + b) == 30 ? true : false;   
+        public static Boolean Sum2(int a, int b) {
+            return a == 30 || b == 30 || (a + b) == 30 ? true : false;
         }
 
         /**
@@ -65,8 +65,8 @@ namespace Exercises
          * @param string str 
          * @return string int
          */
-         public static string AddIf(string str) { 
-                return str.Length > 2 && str.Substring(0, 2).Equals("if") ? str : "if " + str;
+        public static string AddIf(string str) {
+            return str.Length > 2 && str.Substring(0, 2).Equals("if") ? str : "if " + str;
         }
 
         /**
@@ -75,9 +75,9 @@ namespace Exercises
          * @param int a
          * @return string
          */
-        public static string Remove(string str, int a) { 
-                Console.WriteLine(str.Remove(a, 1));
-                    return " ";
+        public static string Remove(string str, int a) {
+            Console.WriteLine(str.Remove(a, 1));
+            return " ";
         }
 
         /**
@@ -85,9 +85,9 @@ namespace Exercises
          * @param string str 
          * @return string 
          **/
-         public static string Reverse(string str) {
-                Console.WriteLine(str.Length > 1 ? str.Substring(str.Length - 1) + str.Substring(1, str.Length - 2) + str.Substring(0, 1) : str);
-                    return " ";
+        public static string Reverse(string str) {
+            Console.WriteLine(str.Length > 1 ? str.Substring(str.Length - 1) + str.Substring(1, str.Length - 2) + str.Substring(0, 1) : str);
+            return " ";
         }
 
         /**
@@ -95,8 +95,8 @@ namespace Exercises
          * @param string str
          * @return string 
          */
-         public static string Copies(string str) {
-                return str.Length < 2 ? str : str.Substring(0, 2) + str.Substring(0, 2) + str.Substring(0, 2) + str.Substring(0, 2);
+        public static string Copies(string str) {
+            return str.Length < 2 ? str : str.Substring(0, 2) + str.Substring(0, 2) + str.Substring(0, 2) + str.Substring(0, 2);
         }
 
         /**
@@ -104,9 +104,9 @@ namespace Exercises
          * @param string str
          * @return string 
          */
-         public static string AddBothEnds(string str){
-               var w = str.Substring(str.Length - 1);
-                 return w+ str +w;
+        public static string AddBothEnds(string str) {
+            var w = str.Substring(str.Length - 1);
+            return w + str + w;
         }
 
         /**
@@ -114,8 +114,8 @@ namespace Exercises
          * @param string str
          * @return string
          */
-         public static string ThreeChar(string str){ 
-                 return str.Length < 3 ? str + str + str : str.Substring(0, 3) + str + str.Substring(0, 3);
+        public static string ThreeChar(string str) {
+            return str.Length < 3 ? str + str + str : str.Substring(0, 3) + str + str.Substring(0, 3);
         }
 
         /**
@@ -123,8 +123,8 @@ namespace Exercises
          * @ param string str 
          * @ return boolean
          */
-            public static Boolean StartWithC(string str) { 
-                return str.StartsWith("c", 0) || str.StartsWith("C", 0) ?  true : false;
+        public static Boolean StartWithC(string str) {
+            return str.StartsWith("c", 0) || str.StartsWith("C", 0) ? true : false;
         }
 
         /**QUESTION # 10 
@@ -133,8 +133,8 @@ namespace Exercises
          * @param int num3 
          * @return boolean
          */
-        public static Boolean Range(int num1, int num2, int num3){
-                return (num1 <= 20 && num1 >= 50) || (num2 <= 20 && num2 >= 50) || (num3 <= 20 && num3 >= 50) ? true: false;
+        public static Boolean Range(int num1, int num2, int num3) {
+            return (num1 <= 20 && num1 >= 50) || (num2 <= 20 && num2 >= 50) || (num3 <= 20 && num3 >= 50) ? true : false;
         }
 
         /**
@@ -142,17 +142,17 @@ namespace Exercises
          * @param int[]a
          * @int d  
          * @return int[]
-         */ 
-         public static int[] LeftRotation(int[]a, int d){
-                int n = a.Length;
-                    int[] NewArray = new int[n];
-                        for (int oldIndex = 0; oldIndex < n; oldIndex++){
-                            int newIndex = (oldIndex + n - d) % n;
-                                NewArray[newIndex] = a[oldIndex]; 
-                                  for (int i = 0; i < a.Length; i++)
-                                   Console.WriteLine(a[i]);
-                                     for (int i = 0; i < a.Length; i++)
-                                        Console.WriteLine(NewArray[i]);
+         */
+        public static int[] LeftRotation(int[] a, int d) {
+            int n = a.Length;
+            int[] NewArray = new int[n];
+            for (int oldIndex = 0; oldIndex < n; oldIndex++) {
+                int newIndex = (oldIndex + n - d) % n;
+                NewArray[newIndex] = a[oldIndex];
+                for (int i = 0; i < a.Length; i++)
+                    Console.WriteLine(a[i]);
+                for (int i = 0; i < a.Length; i++)
+                    Console.WriteLine(NewArray[i]);
             }
             return NewArray;
         }
@@ -164,10 +164,15 @@ namespace Exercises
          * @return String[]
          */
         public static string Sub(String s, int start, int end) {
-            return s.Substring (start, end - 1);
+            return s.Substring(start, end - 1);
         }
 
-
+        /**
+            * QUESTION # 13
+            * @param String s
+            * @String[]ns 
+            * @return String[]
+            */
 
     }
 } 
