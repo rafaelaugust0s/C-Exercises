@@ -5,6 +5,8 @@ namespace Exercises
     class Program
     {
 
+
+
         static void Main(string[] args)
         {
             Console.WriteLine(Sum1(10, 10));
@@ -35,9 +37,9 @@ namespace Exercises
             int[] a = { 1, 2, 3, 4, 5 };
             LeftRotation(a, 2);
             Console.WriteLine(Sub("HelloWorld", 3, 6));
-            Validation("rafaelaugustos");
-
-
+            Console.WriteLine(Validation("a_a"));
+            Console.WriteLine(FunnyString("acxz"));
+            Console.WriteLine(FunnyString("bcxztyu"));
 
 
         }
@@ -184,41 +186,67 @@ namespace Exercises
 
         /**
             * QUESTION # 13
-            * @param String s
-            * @return String[]
+            * @param String userName
+            * @return String
             */
 
-        public static Boolean Validation(String userName)
+        public static String Validation(String userName)
         {
-            int a = userName.Length;
-
-            
-                if (a < 8 && a >= 30)
-            { 
-                    Console.WriteLine(true);
-
-                }
-                else
+            int n = userName.Length;
+            if (n > 8 && n < 30)
+            {
+                return "Valid User name";
+            }
+            else
+            {
+                for (int i = 0; i < userName.Length; i++)
                 {
+                    int first = (int)userName[0];
+                    if ((first >= 97 && first <= 122) || (first >= 65 && first <= 90))
+                    {
+                        return "Valid User name";
+                    }
+                    else
+                    {
+                        for (int j = 0; j < userName.Length; j++)
+                        {
+                            int alpha = (int)userName[j];
 
-                    Console.WriteLine(false);
+                            if ((alpha == 95) || (alpha >= 97 && alpha <= 122) || (alpha >= 65 && alpha <= 90) || (alpha >= 48 && alpha <= 57))
+                            {
+                                return "Valid User name";
+                            }
+                            else
+                            {
+                                return "Invalid user name";
+                            }
+                        }
+                    }
+
                 }
+                return userName;
 
-                return Validation("  ");
-
-
-            
-
+            }
         }
+
+        /**
+        * QUESTION # 14
+        * @param String str
+        * @return String
+        */
+        public static String FunnyString(String str)
+        {
+            string rev = " ";
+            int n = str.Length;
+            for (int i = n - 1; i >= 0; i--)
+                rev += str[i];
+            int j; 
+            for (j = 0; j < n - 1; j++)
+            {
+                int right = Math.Abs(str[j] - str[j + 1]);
+                int left = Math.Abs(rev[j] - rev[j + 1]);
+            }
+            return (j == n - 1) ? "funny" : "not funny";
+        } 
     }
 }
-
-//}
-//else if (userName[i] <= 48 || userName[i] >= 57 || userName[i] <= 97 || userName[i] >= 122
-//         || userName[i] <= 65 || userName[i] <= 90)
-//{
-
-//    return true;
-
-//for (int i = 0; i <= userName.Length; i++)
-                
